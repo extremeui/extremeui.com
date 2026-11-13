@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="bay-blue">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Extreme UI — Material Pixel Experience for Android</title>
+  <meta name="description" content="Extreme UI brings the authentic Google Pixel & Material You experience to any Android device. Dynamic tonal color extraction, At a Glance widgets, themed icons, and fluid 120Hz animations.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="brand-logo">
+        <div class="brand-icon">
+          <!-- Material You Sparkle / Asterisk SVG -->
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2a1 1 0 0 1 1 1v7.086l5.01-5.01a1 1 0 0 1 1.414 1.414L14.414 11.5H21a1 1 0 0 1 0 2h-6.586l5.01 5.01a1 1 0 0 1-1.414 1.414L13 14.914V22a1 1 0 0 1-2 0v-7.086l-5.01 5.01a1 1 0 0 1-1.414-1.414l5.01-5.01H3a1 1 0 0 1 0-2h6.586l-5.01-5.01a1 1 0 0 1 1.414-1.414L11 9.086V3a1 1 0 0 1 1-1Z"/>
+          </svg>
+        </div>
+        <span>Extreme <span class="gradient-text">Pixel UI</span></span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#live-simulator">Pixel Studio</a></li>
+        <li><a href="#presets">Presets Hub</a></li>
+        <li><a href="#compatibility">Compatibility</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+
+      <div class="nav-cta">
+        <a href="#live-simulator" class="btn btn-secondary btn-sm">Try Pixel Live</a>
+        <a href="#" class="btn btn-primary btn-sm open-download-modal">Download v3.5</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero-section">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="badge badge-glow">
+          <span>✨ Material Design 3</span>
+          <span style="opacity: 0.5;">•</span>
+          <span>Google Pixel Experience & Dynamic Monet</span>
+        </div>
+
+        <h1 class="hero-title">
+          The Pure <br>
+          <span class="gradient-text">Pixel Experience</span> <br>
+          on Any Android.
+        </h1>
+
+        <p class="hero-subtitle">
+          Bring the Google Pixel aesthetic to your phone. Intelligent Material You dynamic color harmonizing, live At a Glance widgets, themed icons, and ultra-fluid LTPO physics — all without rooting.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#" class="btn btn-primary open-download-modal">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M3.609 1.814L13.793 12 3.61 22.186a2.001 2.001 0 0 1-.61-.954V2.768c.036-.364.254-.707.609-.954zm11.603 11.604l2.483 2.483-12.39 7.08 9.907-9.563zm0-2.836L5.305.819 17.695 7.9l-2.483 2.482zM18.847 9.05l2.765 1.58c1.05.6 1.05 1.58 0 2.18l-2.765 1.58-2.072-2.07 2.072-2.27z"/>
+            </svg>
+            Get on Google Play
+          </a>
+          <a href="#live-simulator" class="btn btn-secondary">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="5 3 19 12 5 21 5 3"></polygon>
+            </svg>
+            Interactive Pixel Studio
+          </a>
+        </div>
+
+        <div class="hero-metrics">
+          <div class="metric-item">
+            <span class="metric-num">4.9 ★</span>
+            <span class="metric-label">380K+ Reviews</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-num">7.2M+</span>
+            <span class="metric-label">Active Setups</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-num">&lt; 0.8%</span>
+            <span class="metric-label">24h Battery Impact</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Glance Phone Preview in Hero -->
+      <div class="simulator-container">
+        <div class="phone-mockup-wrapper" id="hero-phone-preview" data-theme="bay-blue">
+          <div class="phone-glow-ambient"></div>
+          <div class="phone-device" style="height: 560px; width: 280px;">
+            <div class="phone-screen" style="background: linear-gradient(135deg, #132438 0%, #1e3a5f 50%, #0e1726 100%);">
+              <div class="phone-status-bar">
+                <span>09:41</span>
+                <div style="display:flex;gap:4px;align-items:center;">
+                  <span>5G</span>
+                  <span>100%</span>
+                </div>
+              </div>
+
+              <!-- Pixel Mini Notch -->
+              <div class="phone-camera-island" style="height:24px;min-width:24px;top:8px;">
+                <span class="island-camera-dot"></span>
+              </div>
+
+              <div class="phone-content" style="padding-top:20px;">
+                <div class="phone-widget-area">
+                  <!-- Pixel 2-Line Clock -->
+                  <div class="phone-clock-huge" style="font-size:2.8rem;">09:41</div>
+                  
+                  <!-- At a Glance -->
+                  <div class="pixel-at-a-glance">
+                    <span>Thu, Nov 13</span>
+                    <span>•</span>
+                    <span>21°C ⛅</span>
+                  </div>
+
+                  <div class="phone-widget-card" style="margin-top:10px;">
+                    <div class="music-widget-flex">
+                      <div class="music-album-art">🎵</div>
+                      <div class="music-info">
+                        <div class="music-title">Daylight</div>
+                        <div class="music-artist">Harry Styles</div>
+                      </div>
+                      <div style="color:var(--accent-primary);font-size:16px;">▶</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="phone-dock">
+                  <div class="phone-icons-grid icons-squircle" style="gap:8px;">
+                    <div class="app-icon" style="width:42px;height:42px;">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    </div>
+                    <div class="app-icon" style="width:42px;height:42px;">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                    </div>
+                    <div class="app-icon" style="width:42px;height:42px;">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+                    </div>
+                    <div class="app-icon" style="width:42px;height:42px;">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+                    </div>
+                  </div>
+
+                  <!-- Pixel Bottom Search Bar -->
+                  <div class="phone-search-bar" style="padding:6px 12px;">
+                    <span class="pixel-g-logo">G</span>
+                    <span style="font-size:0.75rem;opacity:0.8;">Search...</span>
+                    <div style="display:flex;gap:6px;font-size:0.8rem;">
+                      <span>🎙️</span>
+                      <span>📷</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       Interactive Live Customizer Studio (Pixel 9 Pro Simulation)
+       ======================================================================== -->
+  <section class="section" id="live-simulator">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Interactive Pixel Studio</span>
+        <h2 class="section-title">Test Drive Pixel Material You</h2>
+        <p class="section-desc">
+          Experience Material Design 3 in your browser. Switch tonal Monet swatches, test At a Glance widgets, and morph themed icon shapes instantly.
+        </p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: 1fr 1.15fr; gap: 48px; align-items: center;">
+        
+        <!-- Live Simulated Pixel Phone -->
+        <div class="simulator-container">
+          <div class="phone-mockup-wrapper" id="phone-mockup-wrapper" data-theme="bay-blue">
+            <div class="phone-glow-ambient"></div>
+            <div class="phone-device">
+              <div class="phone-screen" id="phone-screen" style="background: linear-gradient(135deg, #132438 0%, #1e3a5f 50%, #0e1726 100%);">
+                
+                <!-- Status Bar -->
+                <div class="phone-status-bar">
+                  <span id="phone-status-time">12:00</span>
+                  <div style="display:flex;gap:6px;align-items:center;">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/></svg>
+                    <span>5G</span>
+                    <span>88%</span>
+                  </div>
+                </div>
+
+                <!-- Centered Camera Punch Hole / Dynamic Island -->
+                <div class="phone-camera-island" id="phone-camera-island" title="Tap to toggle Pixel Live Pill!">
+                  <div id="island-content">
+                    <span class="island-camera-dot"></span>
+                  </div>
+                </div>
+
+                <!-- Screen Body -->
+                <div class="phone-content">
+                  
+                  <!-- Widget Area -->
+                  <div class="phone-widget-area">
+                    <div class="phone-clock-huge" id="phone-live-clock">12:00</div>
+                    
+                    <!-- Pixel At a Glance -->
+                    <div class="pixel-at-a-glance">
+                      <span id="phone-live-date">Thu, Nov 13</span>
+                      <span>•</span>
+                      <span>22°C ☀️ Air Quality 34 (Good)</span>
+                    </div>
+
+                    <!-- Widget View 1: Pixel At a Glance Card (default) -->
+                    <div class="phone-widget-card" id="widget-glance-view">
+                      <div style="display:flex;justify-content:space-between;align-items:center;">
+                        <div style="display:flex;gap:10px;align-items:center;">
+                          <div style="width:36px;height:36px;border-radius:12px;background:var(--md-primary-container);color:var(--md-primary);display:flex;align-items:center;justify-content:center;font-size:1.1rem;">
+                            📅
+                          </div>
+                          <div>
+                            <div style="font-size:0.75rem;color:var(--text-muted);">UPCOMING EVENT</div>
+                            <div style="font-size:0.85rem;font-weight:700;color:#fff;">Material You 3.0 Showcase</div>
+                          </div>
+                        </div>
+                        <div style="font-size:0.75rem;font-weight:700;color:var(--md-primary);background:var(--md-primary-container);padding:5px 10px;border-radius:12px;">
+                          14:30
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Widget View 2: Material Music Player (hidden by default) -->
+                    <div class="phone-widget-card" id="widget-music-view" style="display:none;">
+                      <div class="music-widget-flex">
+                        <div class="music-album-art">
+                          ♪
+                        </div>
+                        <div class="music-info">
+                          <div class="music-title">Daylight</div>
+                          <div class="music-artist">Harry Styles • Harry's House</div>
+                        </div>
+                        <button class="music-ctrl-btn" id="music-play-toggle">⏸</button>
+                      </div>
+                      <div style="margin-top:12px;height:4px;background:rgba(255,255,255,0.15);border-radius:2px;overflow:hidden;">
+                        <div style="width:68%;height:100%;background:var(--accent-primary);border-radius:2px;"></div>
+                      </div>
+                    </div>
+
+                    <!-- Widget View 3: System Stats (hidden by default) -->
+                    <div class="phone-widget-card" id="widget-stats-view" style="display:none;">
+                      <div class="stats-grid">
+                        <div class="stat-pill">
+                          <span class="stat-tag">TENSOR G4</span>
+                          <span class="stat-val">2.8 GHz (Optimal)</span>
+                        </div>
+                        <div class="stat-pill">
+                          <span class="stat-tag">MEMORY</span>
+                          <span class="stat-val">4.6 / 12 GB</span>
+                        </div>
+                        <div class="stat-pill">
+                          <span class="stat-tag">BATTERY</span>
+                          <span class="stat-val">88% (Good • 1d 4h)</span>
+                        </div>
+                        <div class="stat-pill">
+                          <span class="stat-tag">SMOOTH DISPLAY</span>
+                          <span class="stat-val">120 Hz LTPO</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Widget View 4: Bento Productivity (hidden by default) -->
+                    <div class="phone-widget-card" id="widget-bento-view" style="display:none;">
+                      <div class="bento-inner">
+                        <div class="bento-task">
+                          <span class="bento-checkbox">✓</span>
+                          <span>Daily Google Fit goal (8,450 / 10k steps)</span>
+                        </div>
+                        <div class="bento-task">
+                          <span class="bento-checkbox"></span>
+                          <span>Pixel Feature Drop exploration</span>
+                        </div>
+                        <div class="bento-task">
+                          <span class="bento-checkbox"></span>
+                          <span>Sync Material You wallpaper palette</span>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <!-- Pixel Themed Dock -->
+                  <div class="phone-dock">
+                    <div class="phone-icons-grid icons-squircle" id="phone-icons-grid">
+                      <!-- Phone -->
+                      <div class="app-icon" title="Phone">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                      </div>
+                      <!-- Messages -->
+                      <div class="app-icon" title="Messages">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                      </div>
+                      <!-- Chrome -->
+                      <div class="app-icon" title="Chrome">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+                      </div>
+                      <!-- Camera -->
+                      <div class="app-icon" title="Camera">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+                      </div>
+                    </div>
+
+                    <!-- Pixel Bottom Search Bar -->
+                    <div class="phone-search-bar">
+                      <span class="pixel-g-logo">G</span>
+                      <span style="font-size:0.75rem;opacity:0.85;">Search apps, web & phone...</span>
+                      <div style="display:flex;gap:8px;font-size:0.85rem;">
+                        <span>🎙️</span>
+                        <span>📷</span>
+                      </div>
+                    </div>
+
+                    <div class="phone-gesture-bar"></div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Studio Customization Controls Panel -->
+        <div class="studio-panel">
+          <div class="studio-header">
+            <h3 class="studio-title">
+              <span class="gradient-text">Pixel Studio Controls</span>
+            </h3>
+            <span class="badge badge-glow">Material You</span>
+          </div>
+
+          <!-- Color Swatches / Material You Tonal Palettes -->
+          <div class="control-group">
+            <label class="control-label">
+              <span>Dynamic Monet Color Palette</span>
+              <span style="font-weight:400;color:var(--text-dim);font-size:0.75rem;">Material 3 Tonal Harmony</span>
+            </label>
+            <div class="theme-swatches">
+              <button class="swatch-btn active" data-theme="bay-blue" style="background: linear-gradient(135deg, #a8c7fa, #1b447e);" title="Pixel Bay Blue"></button>
+              <button class="swatch-btn" data-theme="sage-hazel" style="background: linear-gradient(135deg, #b4d1b8, #354e3a);" title="Hazel Sage"></button>
+              <button class="swatch-btn" data-theme="coral-rose" style="background: linear-gradient(135deg, #ffb3b8, #7e2731);" title="Coral Rose"></button>
+              <button class="swatch-btn" data-theme="porcelain-amber" style="background: linear-gradient(135deg, #edd580, #554400);" title="Porcelain Amber"></button>
+              <button class="swatch-btn" data-theme="obsidian-slate" style="background: linear-gradient(135deg, #c4c6cf, #44474e);" title="Obsidian Slate"></button>
+            </div>
+          </div>
+
+          <!-- Widget Type -->
+          <div class="control-group">
+            <label class="control-label">Active Pixel Widget</label>
+            <div class="tab-selector">
+              <button class="tab-btn widget-tab-btn active" data-widget="glance">At a Glance</button>
+              <button class="tab-btn widget-tab-btn" data-widget="music">Now Playing</button>
+              <button class="tab-btn widget-tab-btn" data-widget="stats">Hardware</button>
+              <button class="tab-btn widget-tab-btn" data-widget="bento">Productivity</button>
+            </div>
+          </div>
+
+          <!-- Icon Pack Style -->
+          <div class="control-group">
+            <label class="control-label">Themed Icons Geometry</label>
+            <div class="tab-selector">
+              <button class="tab-btn icon-tab-btn active" data-icon-style="icons-squircle">Squircle M3</button>
+              <button class="tab-btn icon-tab-btn" data-icon-style="icons-outline">Circle Pixel</button>
+              <button class="tab-btn icon-tab-btn" data-icon-style="icons-glyphs">Minimal Glyph</button>
+              <button class="tab-btn icon-tab-btn" data-icon-style="icons-neon">Tonal Elevated</button>
+            </div>
+          </div>
+
+          <!-- Dynamic Capsule Mode -->
+          <div class="control-group">
+            <label class="control-label">Pixel Live Island Mode</label>
+            <div class="tab-selector">
+              <button class="tab-btn island-tab-btn active" data-island="idle">Idle Punch</button>
+              <button class="tab-btn island-tab-btn" data-island="music">Live Audio</button>
+              <button class="tab-btn island-tab-btn" data-island="charging">Rapid Charge</button>
+              <button class="tab-btn island-tab-btn" data-island="nav">Google Maps</button>
+            </div>
+          </div>
+
+          <!-- Wallpaper Presets -->
+          <div class="control-group">
+            <label class="control-label">Pixel Nature & Abstract Wallpapers</label>
+            <div class="wallpaper-selector">
+              <div class="wallpaper-thumb active" data-bg="0" style="background: linear-gradient(135deg, #132438, #1e3a5f);"></div>
+              <div class="wallpaper-thumb" data-bg="1" style="background: linear-gradient(135deg, #14281d, #1f422e);"></div>
+              <div class="wallpaper-thumb" data-bg="2" style="background: linear-gradient(135deg, #2b1218, #4a1e28);"></div>
+              <div class="wallpaper-thumb" data-bg="3" style="background: linear-gradient(135deg, #26200f, #453716);"></div>
+            </div>
+          </div>
+
+          <div style="padding-top:10px;display:flex;gap:12px;">
+            <a href="#" class="btn btn-primary open-download-modal" style="flex:1;">
+              Export Pixel Config
+            </a>
+            <button class="btn btn-secondary" onclick="alert('Pixel configuration copied! Paste into Extreme UI to apply.')">
+              Share Preset
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Features Showcase Bento Grid (Material Design 3 Style)
+       ======================================================================== -->
+  <section class="section" id="features">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Material 3 Capabilities</span>
+        <h2 class="section-title">Authentic Pixel DNA</h2>
+        <p class="section-desc">
+          Engineered to reproduce the responsive, playful, and cohesive Google Pixel software experience on any Android device.
+        </p>
+      </div>
+
+      <div class="bento-grid">
+        
+        <!-- Bento 1: Dynamic Monet Theming (Span 8) -->
+        <div class="glass-card bento-card bento-col-8">
+          <div>
+            <div class="bento-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"/><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"/><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"/><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.563-2.512 5.563-5.563C22 6.5 17.5 2 12 2Z"/></svg>
+            </div>
+            <h3 class="bento-title">Material You Monet 3.0 Dynamic Color</h3>
+            <p class="bento-text">
+              Extracts 65-shade tonal harmonies directly from your wallpaper using Google's Material Color Utilities algorithm. Automatically synchronizes status bar tints, widget accents, and themed icon fills simultaneously.
+            </p>
+          </div>
+
+          <div class="bento-visual" style="display:flex;gap:12px;align-items:center;">
+            <div style="flex:1;height:14px;background:#a8c7fa;border-radius:7px;"></div>
+            <div style="flex:1;height:14px;background:#b4d1b8;border-radius:7px;"></div>
+            <div style="flex:1;height:14px;background:#ffb3b8;border-radius:7px;"></div>
+            <div style="flex:1;height:14px;background:#edd580;border-radius:7px;"></div>
+            <div style="flex:1;height:14px;background:#c4c6cf;border-radius:7px;"></div>
+          </div>
+        </div>
+
+        <!-- Bento 2: Zero Battery Drain (Span 4) -->
+        <div class="glass-card bento-card bento-col-4">
+          <div>
+            <div class="bento-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            </div>
+            <h3 class="bento-title">&lt; 0.8% Battery Usage</h3>
+            <p class="bento-text">
+              Deep sleep integration with Android JobScheduler and Doze mode. Suspends 100% when screen turns off.
+            </p>
+          </div>
+          <div style="margin-top:20px;display:flex;align-items:baseline;gap:8px;">
+            <span style="font-size:2.4rem;font-weight:800;color:var(--accent-primary);">0.78%</span>
+            <span style="font-size:0.85rem;color:var(--text-muted);">average per 24 hours</span>
+          </div>
+        </div>
+
+        <!-- Bento 3: At a Glance Live Space (Span 4) -->
+        <div class="glass-card bento-card bento-col-4">
+          <div>
+            <div class="bento-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            </div>
+            <h3 class="bento-title">Pixel At a Glance</h3>
+            <p class="bento-text">
+              Contextual live cards showing upcoming calendar appointments, flight departures, precipitation forecasts, and doorbell video alerts.
+            </p>
+          </div>
+          <div class="bento-visual" style="text-align:center;font-size:0.85rem;color:var(--accent-primary);font-weight:600;">
+            Contextual Weather & Calendar Sync
+          </div>
+        </div>
+
+        <!-- Bento 4: Shizuku Rootless System Integration (Span 4) -->
+        <div class="glass-card bento-card bento-col-4">
+          <div>
+            <div class="bento-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3 class="bento-title">Rootless System Theming</h3>
+            <p class="bento-text">
+              Seamless Shizuku wireless ADB integration. Modify Quick Settings tiles, pill gesture bar colors, and status bar icons without voiding Knox or SafetyNet.
+            </p>
+          </div>
+          <div style="margin-top:20px;display:flex;gap:8px;font-size:0.8rem;color:var(--text-dim);">
+            <span>✓ Knox Safe</span>
+            <span>✓ Google Wallet Works</span>
+          </div>
+        </div>
+
+        <!-- Bento 5: Themed Icons 2.0 (Span 4) -->
+        <div class="glass-card bento-card bento-col-4">
+          <div>
+            <div class="bento-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+            </div>
+            <h3 class="bento-title">Themed Icons 2.0</h3>
+            <p class="bento-text">
+              Automatic monochrome tinting for unthemed third-party apps. Reaches 100% homescreen icon color uniformity automatically.
+            </p>
+          </div>
+          <div style="margin-top:20px;font-size:0.85rem;color:var(--accent-primary);font-weight:600;">
+            Universal Tinting Support
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Community Presets Showcase Hub
+       ======================================================================== -->
+  <section class="section" id="presets" style="background: rgba(0, 0, 0, 0.2);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Community Hub</span>
+        <h2 class="section-title">12,000+ Curated Pixel Presets</h2>
+        <p class="section-desc">
+          Browse setups submitted by top Android themers worldwide. Click "Apply Live" to inject any preset directly into the Pixel simulator above!
+        </p>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div class="presets-filter-bar">
+        <button class="filter-btn active" data-filter="all">All Presets</button>
+        <button class="filter-btn" data-filter="bay">Bay Blue</button>
+        <button class="filter-btn" data-filter="sage">Hazel Sage</button>
+        <button class="filter-btn" data-filter="coral">Coral Rose</button>
+        <button class="filter-btn" data-filter="porcelain">Porcelain Amber</button>
+      </div>
+
+      <!-- Presets Cards Grid -->
+      <div class="presets-grid">
+        
+        <!-- Preset 1 -->
+        <div class="glass-card preset-card" data-category="bay">
+          <div class="preset-preview" style="background: linear-gradient(135deg, #132438 0%, #1e3a5f 50%, #0e1726 100%);">
+            <div class="preset-info">
+              <span class="badge" style="font-size:0.7rem;margin-bottom:6px;">Bay Blue</span>
+              <h4 class="preset-name">Pixel 9 Pro Minimal</h4>
+              <p class="preset-author">by @GoogleDesignFan</p>
+            </div>
+          </div>
+          <div class="preset-footer">
+            <div class="preset-stats">
+              <span>★ 4.9</span>
+              <span>•</span>
+              <span>84.2k downloads</span>
+            </div>
+            <button class="btn btn-secondary btn-sm btn-apply-preset"
+                    data-preset-theme="bay-blue"
+                    data-preset-widget="glance"
+                    data-preset-icons="icons-squircle"
+                    data-preset-bg="0">
+              Apply Live
+            </button>
+          </div>
+        </div>
+
+        <!-- Preset 2 -->
+        <div class="glass-card preset-card" data-category="sage">
+          <div class="preset-preview" style="background: linear-gradient(135deg, #14281d 0%, #1f422e 50%, #0d1a13 100%);">
+            <div class="preset-info">
+              <span class="badge" style="font-size:0.7rem;margin-bottom:6px;">Hazel Sage</span>
+              <h4 class="preset-name">Botanical Garden Nature</h4>
+              <p class="preset-author">by @PixelNature</p>
+            </div>
+          </div>
+          <div class="preset-footer">
+            <div class="preset-stats">
+              <span>★ 4.9</span>
+              <span>•</span>
+              <span>62.7k downloads</span>
+            </div>
+            <button class="btn btn-secondary btn-sm btn-apply-preset"
+                    data-preset-theme="sage-hazel"
+                    data-preset-widget="music"
+                    data-preset-icons="icons-outline"
+                    data-preset-bg="1">
+              Apply Live
+            </button>
+          </div>
+        </div>
+
+        <!-- Preset 3 -->
+        <div class="glass-card preset-card" data-category="coral">
+          <div class="preset-preview" style="background: linear-gradient(135deg, #2b1218 0%, #4a1e28 50%, #14090c 100%);">
+            <div class="preset-info">
+              <span class="badge" style="font-size:0.7rem;margin-bottom:6px;">Coral Rose</span>
+              <h4 class="preset-name">Sunset Horizon Pastel</h4>
+              <p class="preset-author">by @AestheticDroid</p>
+            </div>
+          </div>
+          <div class="preset-footer">
+            <div class="preset-stats">
+              <span>★ 4.8</span>
+              <span>•</span>
+              <span>71.5k downloads</span>
+            </div>
+            <button class="btn btn-secondary btn-sm btn-apply-preset"
+                    data-preset-theme="coral-rose"
+                    data-preset-widget="bento"
+                    data-preset-icons="icons-glyphs"
+                    data-preset-bg="2">
+              Apply Live
+            </button>
+          </div>
+        </div>
+
+        <!-- Preset 4 -->
+        <div class="glass-card preset-card" data-category="porcelain">
+          <div class="preset-preview" style="background: linear-gradient(135deg, #26200f 0%, #453716 50%, #120e06 100%);">
+            <div class="preset-info">
+              <span class="badge" style="font-size:0.7rem;margin-bottom:6px;">Porcelain Amber</span>
+              <h4 class="preset-name">Warm Dunes Luxury</h4>
+              <p class="preset-author">by @MinimalPixel</p>
+            </div>
+          </div>
+          <div class="preset-footer">
+            <div class="preset-stats">
+              <span>★ 4.9</span>
+              <span>•</span>
+              <span>95.4k downloads</span>
+            </div>
+            <button class="btn btn-secondary btn-sm btn-apply-preset"
+                    data-preset-theme="porcelain-amber"
+                    data-preset-widget="stats"
+                    data-preset-icons="icons-squircle"
+                    data-preset-bg="3">
+              Apply Live
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Compatibility & Specifications
+       ======================================================================== -->
+  <section class="section" id="compatibility">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Universal Hardware Support</span>
+        <h2 class="section-title">Tested on Millions of Devices</h2>
+        <p class="section-desc">
+          Engineered to perform reliably across all major OEM flavors and Android versions without breaking system updates.
+        </p>
+      </div>
+
+      <div class="specs-grid">
+        <div class="glass-card spec-card">
+          <span class="spec-val">10 — 16+</span>
+          <span class="spec-name">Android Versions</span>
+          <span class="spec-detail">Full backward and forward support</span>
+        </div>
+        <div class="glass-card spec-card">
+          <span class="spec-val">120 Hz</span>
+          <span class="spec-name">Refresh Rate</span>
+          <span class="spec-detail">Ultra-fluid LTPO animation sync</span>
+        </div>
+        <div class="glass-card spec-card">
+          <span class="spec-val">100%</span>
+          <span class="spec-name">No Root Required</span>
+          <span class="spec-detail">Safe for work profiles & banking apps</span>
+        </div>
+        <div class="glass-card spec-card">
+          <span class="spec-val">18 MB</span>
+          <span class="spec-name">App Footprint</span>
+          <span class="spec-detail">Lightweight native binary footprint</span>
+        </div>
+      </div>
+
+      <div class="oem-pills">
+        <div class="oem-pill">✨ Google Pixel Android 12 - 16+</div>
+        <div class="oem-pill">📱 Samsung One UI 5 / 6 / 7</div>
+        <div class="oem-pill">⚡ Xiaomi HyperOS & MIUI</div>
+        <div class="oem-pill">🔴 OnePlus OxygenOS / ColorOS</div>
+        <div class="oem-pill">⚪ Nothing OS Dot-Matrix</div>
+        <div class="oem-pill">🔷 Motorola MyUX</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       User Reviews & Press Quotes
+       ======================================================================== -->
+  <section class="section" style="background: rgba(0, 0, 0, 0.25);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Community Love</span>
+        <h2 class="section-title">What Themers Are Saying</h2>
+      </div>
+
+      <div class="reviews-grid">
+        <div class="glass-card review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">
+            "Finally, an app that nails the authentic Pixel Material You dynamic palettes! The At a Glance widget alone makes my Galaxy phone feel like a flagship Pixel 9 Pro."
+          </p>
+          <div class="review-author">
+            <div class="author-avatar">DL</div>
+            <div>
+              <div class="author-name">David L.</div>
+              <div class="author-device">Samsung Galaxy S24 Ultra</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="glass-card review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">
+            "The themed icon engine dynamically recolors even my banking and regional utility apps that usually refuse to theme. Absolutely brilliant engineering."
+          </p>
+          <div class="review-author">
+            <div class="author-avatar">ER</div>
+            <div>
+              <div class="author-name">Elena Rostova</div>
+              <div class="author-device">Google Pixel 8 Pro</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="glass-card review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">
+            "Under 0.8% battery impact is genuinely unheard of. The live phone simulator on this site convinced me, and the actual app runs even smoother."
+          </p>
+          <div class="review-author">
+            <div class="author-avatar">MV</div>
+            <div>
+              <div class="author-name">Marcus Vance</div>
+              <div class="author-device">Nothing Phone (2)</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Frequently Asked Questions
+       ======================================================================== -->
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Got Questions?</span>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item open">
+          <button class="faq-question">
+            <span>Do I need root access to use Extreme Pixel UI?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>
+              No root required at all! 98% of Extreme UI features — including dynamic Material You widgets, Monet color extraction, At a Glance, and themed icons — run out of the box using standard Android APIs. For deeper status bar tweaks, you can optionally connect to Shizuku wirelessly without voiding your warranty.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Does it work with my current launcher (Nova, Niagara, One UI)?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Yes! Extreme UI is built modularly. You can run it as an overlay widget suite and status bar customizer alongside Nova Launcher, Niagara Launcher, Lawnchair, or default Pixel and Samsung One UI launchers.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Will it drain my battery or cause lag?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Unlike legacy widget engines that keep CPU cores awake in the background, Extreme UI utilizes Android 14/15/16 JobScheduler and hardware-accelerated rendering. When your screen turns off, the app enters instant sleep mode, consuming on average less than 0.8% battery over a 24-hour cycle.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Can I export and share my custom themes?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Absolutely. Extreme UI allows you to export your entire configuration — including widget layouts, wallpaper color vectors, and icon choices — as a lightweight `.pixel` preset file or a cloud share link that anyone can install with one click.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Call To Action Banner
+       ======================================================================== -->
+  <section class="cta-banner">
+    <div class="container">
+      <div class="cta-box">
+        <h2 class="cta-title">Bring the Pixel Experience to Your Phone</h2>
+        <p class="cta-desc">
+          Join over 7 million creators enjoying pure Material You customization on any Android device. Available on Google Play and direct APK.
+        </p>
+        <div style="display:flex;justify-content:center;gap:14px;flex-wrap:wrap;">
+          <a href="#" class="btn btn-primary open-download-modal">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M3.609 1.814L13.793 12 3.61 22.186a2.001 2.001 0 0 1-.61-.954V2.768c.036-.364.254-.707.609-.954zm11.603 11.604l2.483 2.483-12.39 7.08 9.907-9.563zm0-2.836L5.305.819 17.695 7.9l-2.483 2.482zM18.847 9.05l2.765 1.58c1.05.6 1.05 1.58 0 2.18l-2.765 1.58-2.072-2.07 2.072-2.27z"/>
+            </svg>
+            Download Free on Google Play
+          </a>
+          <a href="#" class="btn btn-secondary open-download-modal">
+            Download APK (v3.5.2)
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Download Dialog Modal
+       ======================================================================== -->
+  <div class="modal-backdrop" id="download-modal">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3 style="font-size:1.3rem;font-weight:700;">Download Extreme Pixel UI</h3>
+        <button class="modal-close" id="modal-close-btn">&times;</button>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:14px;margin-bottom:20px;">
+        <a href="https://play.google.com" target="_blank" class="btn btn-primary" style="justify-content:flex-start;padding:14px 20px;">
+          <span style="font-size:1.4rem;">▶</span>
+          <div style="text-align:left;">
+            <div style="font-size:0.75rem;opacity:0.8;">OFFICIAL STORE</div>
+            <div style="font-size:0.95rem;font-weight:700;">Google Play Store (Auto-Updates)</div>
+          </div>
+        </a>
+
+        <a href="#" class="btn btn-secondary" style="justify-content:flex-start;padding:14px 20px;">
+          <span style="font-size:1.4rem;">📦</span>
+          <div style="text-align:left;">
+            <div style="font-size:0.75rem;opacity:0.8;">DIRECT INSTALL</div>
+            <div style="font-size:0.95rem;font-weight:700;">ExtremePixelUI-v3.5.2-release.apk (18.4 MB)</div>
+          </div>
+        </a>
+
+        <a href="https://github.com" target="_blank" class="btn btn-secondary" style="justify-content:flex-start;padding:14px 20px;">
+          <span style="font-size:1.4rem;">🐙</span>
+          <div style="text-align:left;">
+            <div style="font-size:0.75rem;opacity:0.8;">OPEN SOURCE HUB</div>
+            <div style="font-size:0.95rem;font-weight:700;">GitHub Releases & Source Code</div>
+          </div>
+        </a>
+      </div>
+
+      <!-- SHA-256 Checksum -->
+      <div style="background:var(--md-surface-container-high);border-radius:16px;padding:14px;border:1px solid var(--md-outline-variant);">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;">
+          <span style="font-size:0.72rem;color:var(--text-dim);font-weight:600;">SHA-256 CHECKSUM</span>
+          <button class="btn-copy" data-copy="e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855" style="background:none;border:none;color:var(--accent-primary);font-size:0.75rem;cursor:pointer;font-weight:600;">Copy</button>
+        </div>
+        <div style="font-family:var(--font-mono);font-size:0.7rem;color:var(--text-muted);word-break:break-all;">
+          e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       Footer
+       ======================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="#" class="brand-logo" style="margin-bottom:16px;">
+            <div class="brand-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a1 1 0 0 1 1 1v7.086l5.01-5.01a1 1 0 0 1 1.414 1.414L14.414 11.5H21a1 1 0 0 1 0 2h-6.586l5.01 5.01a1 1 0 0 1-1.414 1.414L13 14.914V22a1 1 0 0 1-2 0v-7.086l-5.01 5.01a1 1 0 0 1-1.414-1.414l5.01-5.01H3a1 1 0 0 1 0-2h6.586l-5.01-5.01a1 1 0 0 1 1.414-1.414L11 9.086V3a1 1 0 0 1 1-1Z"/></svg>
+            </div>
+            <span>Extreme <span class="gradient-text">Pixel UI</span></span>
+          </a>
+          <p style="color:var(--text-muted);font-size:0.9rem;max-width:320px;line-height:1.6;">
+            The Google Material You and Pixel personalization suite for Android. Crafted with precision for the worldwide aesthetic customization community.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Product</h4>
+          <ul class="footer-links">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#live-simulator">Pixel Studio</a></li>
+            <li><a href="#presets">Community Presets</a></li>
+            <li><a href="#compatibility">Supported Devices</a></li>
+            <li><a href="#">Changelog</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Community</h4>
+          <ul class="footer-links">
+            <li><a href="#">Discord Server</a></li>
+            <li><a href="#">Reddit r/PixelArtDroid</a></li>
+            <li><a href="#">Telegram Channel</a></li>
+            <li><a href="#">Twitter / X</a></li>
+            <li><a href="#">Creator Guidelines</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Legal & Safety</h4>
+          <ul class="footer-links">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Security & Permissions</a></li>
+            <li><a href="#">Contact Developers</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; 2026 Extreme Pixel UI Suite. Android & Pixel are trademarks of Google LLC.</span>
+        <span>Crafted for Android Customizers Worldwide</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
